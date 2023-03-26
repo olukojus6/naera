@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--NAV-->
+    <section id="introduction">
+    
+        <nav class="header">
+            <h2 class="naera">naera</h2>
+            <div id="menubtn">
+                <img id="menu1" src="coolicon.png" alt="">
+            </div>
+            <div class="title">
+                <a class="home" href="#introduction">HOME</a>
+                <a class="faq" href="#last">FAQs</a>
+                <a class="login" href="#">LOG-IN</a>
+                <div class="createback">
+                    <a class="create" href="#">CREATE ACCOUNT</a>
+                </div>
+            </div>
+            <div id="mobilenav">
+                <div class="title1">
+                    <ul class="ul">
+                        <ol><a class="home1" href="#introduction">HOME</a></ol>
+                        <ol><a class="faq1" href="#last">FAQs</a></ol>
+                        <ol><a class="login1" href="#">LOG-IN</a></ol>
+                    </ul>
+                    <div class="createback1">
+                        <a class="create" href="#">CREATE ACCOUNT</a>
+                    </div>
+                </div>        
+            </div>
+        </nav>
+    </section>
+
+<!--FIRSTPAGE-->
+<section class="hero">
+    <div class="heromessage">
+        <h1 class="display">The Easy Way <br> to Pay Bills </h1>
+        <p class="smallmsg">You can enjoy uninterrupted utility services <br> even if you don't have a dime.</p>
+        <div class="createbacke">
+            <a class="createo" href="#">CREATE ACCOUNT</a>
+        </div>
+    
+    </div>
+    
+        <img class="phones" src="phones.png" alt="">
+   
+
+</section>
+<!--SECONDPAGE-->
+<section class="wedo">
+    
+    <!--fist-->
+    <div class="wehave">
+        <img class="phone1" src="phone1.png" alt="">
+        <img class="rectangle" src="Rectangle.png" alt="">
+        <div class="pack">
+            <h2 class="main">Choose any bill</h2>
+            <p class="sub">Pay for your bills easy and instantly. Lorem <br> ipsum dolor sit amet, consectetur adipiscing <br> elit ut aliquam</p>
+        </div>
+    
+    </div>
+<!--SECOND-->
+<div class="wehaveo">
+
+    <div class="packo">
+        <img class="phone11" src="phone2.png" alt="">
+        <img class="semi1" src="Ellipse (2).png" alt="">
+        <img class="semi" src="Ellipse 14.png" alt="">    
+        <h2 class="maino">Add bills to cart</h2>
+        <p class="subo">Place order for as many bills as you want, through them in the cart and just pay for <br> them all together.</p>
+    </div>
+    <img class="phone2" src="phone2.png" alt="">
+  
+</div>  
+<!--THIRD-->
+<div class="wehave">
+    <img class="phone3" src="phone3.png" alt="">
+    <img class="polygon" src="Polygon.png" alt="">
+    <div class="packa">
+        <h2 class="maina">Keep track on your bills</h2>
+        <p class="suba">Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit ut aliquam, purus sit amet luctus venenatis</p>
+        <p class="suba2">Lorem ipsum dolor sit amet, consectetur adipiscing  elit ut aliquam, purus sit amet <br> luctus  venenatis</p>
+    </div>
+
+</div>
+</section>
+
+<!--FAQS-->
+<section class="faqs">
+    <div class="faqsimg">
+        <img class="smallfaq" src="FAQs.png" alt="">
+        <img class="bigfaq" src="FAQs_web.png" alt="">
+    </div>
+    <div class="faqsword">
+        <div class="topics">
+            <h2 class="faqtitle">This is a popula question?</h2>
+            <p class="subfaq">This is a satisfactory answer for user. Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
+        </div>
+        <div class="topics">
+            <h2 class="faqtitle">This is a popula question?</h2>
+            <p class="subfaq">This is a satisfactory answer for user. Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
+        </div>
+        <div class="topics">
+            <h2 class="faqtitle">This is a popula question?</h2>
+            <p class="subfaq1">This is a satisfactory answer for user. Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
+        </div>
+    </div>
+</section>
+<!--last page-->
+<section id="last">  
+    <div class="lastright">
+        <h2 class="na">naera</h2>
+        <p class="year">@ 2022</p>
+    </div>
+    
+        <div class="lastlist">
+            <ul>
+                <ol>COMPANY</ol>
+                <ol>About Us</ol>
+                <ol>FAQs</ol>
+                <ol>Contact US</ol>
+            </ul>
+        </div>
+        <div class="lastlist">
+            <ul>
+                <ol>COMPANY</ol>
+                <ol>About Us</ol>
+                <ol>FAQs</ol>
+                <ol>Contact US</ol>
+            </ul>
+        </div>
+
+</section>
+<script>
+    var menubtn = document.getElementById("menubtn")
+    var mobilenav = document.getElementById("mobilenav")
+    var menu1 = document.getElementById("menu1")
+
+    menubtn.onclick = function(){
+        if(mobilenav.style.right == "-500px"){
+            mobilenav.style.right = "0"
+            menu1.src = "close.png";
+        }
+        else{
+            mobilenav.style.right = "-500px";
+            menu1.src = "coolicon.png";
+        }
+    }
+
+    var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 10000,
+	speedAsDuration: true
+});
+</script>
